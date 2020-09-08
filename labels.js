@@ -20,20 +20,6 @@ const colors = {
 	wasabi: '96cc28'
 };
 
-// Types of Origami project
-const origamiTypes = [
-	'cli',
-	'component', // Yes, I know it's not a type... yet
-	'config',
-	'example',
-	'imageset',
-	'library',
-	'meta',
-	'module',
-	'service',
-	'website'
-];
-
 // Create and export the labels
 module.exports = [
 
@@ -184,35 +170,5 @@ module.exports = [
 		color: colors.oxfordWhite50,
 		aliases: []
 	},
-
-	// Add in Origami type labels
-	...origamiTypes.map(origamiType => {
-		return {
-			name: origamiType,
-			description: `Relates to an Origami ${origamiType}`,
-			color: colors.velvet,
-			aliases: []
-		}
-	}),
-
-	// Add in continuous delivery labels
-	{
-		name: 'release:major',
-		description: `Add to a PR to trigger a MAJOR version bump when merged`,
-		color: colors.claret,
-		aliases: []
-	},
-	{
-		name: 'release:minor',
-		description: `Add to a PR to trigger a MINOR version bump when merged`,
-		color: colors.jade,
-		aliases: []
-	},
-	{
-		name: 'release:patch',
-		description: `Add to a PR to trigger a PATCH version bump when merged`,
-		color: colors.sky,
-		aliases: []
-	}
 
 ];
