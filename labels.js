@@ -57,34 +57,34 @@ module.exports = [
 	aliases: []
 },
 {
-	name: "🕑 S - hours",
+	name: "S - hours",
 	description: "Small effort - less than a day",
 	color: colors.claretWhite20,
-	aliases: ['good first issue', 'S - hours']
+	aliases: ['good first issue', '🕑 S - hours']
 },
 {
-	name: "🕑 M - days",
+	name: "M - days",
 	description: "Medium effort - a day or two... or three",
 	color: colors.claretWhite40,
-	aliases: ['M - days']
+	aliases: ['🕑 M - days']
 },
 {
-	name: "🕑 L - weeks",
+	name: "L - weeks",
 	description: "Large effort - a week or two",
 	color: colors.claretWhite60,
-	aliases: ['L- weeks', 'L - weeks']
+	aliases: ['L- weeks', '🕑 L - weeks']
 },
 {
-	name: "🕑 XL - month or two",
+	name: "XL - month or two",
 	description: "Extra large effort - starting to count in months",
 	color: colors.claretWhite80,
-	aliases: ['XL - month or two']
+	aliases: ['🕑 XL - month or two']
 },
 {
-	name: "🕑 XXL - many months",
+	name: "XXL - many months",
 	description: "Extra extra large effort - this is a behemoth",
 	color: colors.claret,
-	aliases: ['XXl - many months']
+	aliases: ['🕑 XXL - many months']
 },
 {
 	name: "ENABLER",
