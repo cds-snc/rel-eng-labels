@@ -60,25 +60,25 @@ module.exports = [
 	name: "🕑 S - hours",
 	description: "Small effort - less than a day",
 	color: colors.claretWhite20,
-	aliases: ['good first issue']
+	aliases: ['good first issue', 'S - hours']
 },
 {
 	name: "🕑 M - days",
 	description: "Medium effort - a day or two... or three",
 	color: colors.claretWhite40,
-	aliases: []
+	aliases: ['M - days']
 },
 {
 	name: "🕑 L - weeks",
 	description: "Large effort - a week or two",
 	color: colors.claretWhite60,
-	aliases: ['L- weeks']
+	aliases: ['L- weeks', 'L - weeks']
 },
 {
 	name: "🕑 XL - month or two",
 	description: "Extra large effort - starting to count in months",
 	color: colors.claretWhite80,
-	aliases: []
+	aliases: ['XL - month or two']
 },
 {
 	name: "🕑 XXL - many months",
