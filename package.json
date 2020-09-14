@@ -1,15 +1,15 @@
 {
-  "name": "@financial-times/origami-labels",
+  "name": "@financial-times/rel-eng-labels",
   "version": "0.0.0",
   "description": "GitHub action to sync a repo's issue labels with the standard Origami set",
   "keywords": [],
   "author": "Rowan Manning (https://rowanmanning.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Financial-Times/origami-labels.git"
+    "url": "https://github.com/Financial-Times/rel-eng-labels.git"
   },
-  "homepage": "https://github.com/Financial-Times/origami-labels",
-  "bugs": "https://github.com/Financial-Times/origami-labels/issues",
+  "homepage": "https://github.com/Financial-Times/rel-eng-labels",
+  "bugs": "https://github.com/Financial-Times/rel-eng-labels/issues",
   "license": "MIT",
   "engines": {
     "node": ">=12",
