@@ -38,7 +38,8 @@ mkdir -p .github/workflows && curl https://raw.githubusercontent.com/Financial-T
 You can find the current labels in [`./labels.js`](labels.js). Edit this file to make changes to reliability engineering's suite of labels.
 
 ### Value
-- **$** - Low value - more tidying/doing something cool than delivering an outcome
+- **¢** - Very low value - more tidying/doing something cool than delivering an outcome
+- **$** - Low value - would improve something there is not a great need for
 - **$$** - Medium value - would definitely solve some problems for us or our users
 - **$$$** - High value - would improve outcomes massively, or for lots of users
 
@@ -47,6 +48,7 @@ You can find the current labels in [`./labels.js`](labels.js). Edit this file to
 - **ENABLER** - Likely to unlock lots of possibilities
 - **RISK** - Something that could go badly wrong if left as it is
 - **SECURITY** - Has security implications
+- **BLOCKED** - Cannot be implmented before something else is
 
 ### T-shirt sizing
 
@@ -58,11 +60,11 @@ You can find the current labels in [`./labels.js`](labels.js). Edit this file to
 
 ### Descriptions
 - **UX** - Will make the project easier to use
-- **documentation**
-- **feature** (formerly enhancement)
-- **tech debt**
-- **tests**
-- **bug** - Something that is properly broken
+- **documentation** - Improvements to the project's documentation
+- **feature** - Addition of new functionality 
+- **tests** - Improvement of the project's testedness
+- **tech debt** - Improvement to non-functional aspects of the project
+- **bug** - Something that is broken
 - **TGG** - Would benefit from a TGG proposal
 
 ### Changing a label name
