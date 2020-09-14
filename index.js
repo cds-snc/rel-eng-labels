@@ -9,6 +9,8 @@ void async function () {
 		await githubLabelSync({
 			accessToken: core.getInput('github-token'),
 			repo: process.env.GITHUB_REPOSITORY,
+			allowAddedLabels: true,
+			dryRun: true,
 			labels,
 			log: {
 				info: core.info,

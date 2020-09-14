@@ -5,214 +5,156 @@ const colors = {
 	black20: 'ccc1b7',
 	candy: 'ff7faa',
 	claret: '990f3d',
+	claretWhite80: 'ad3f64',
+	claretWhite60: 'c26f8b',
+	claretWhite40: 'd69fb1',
+	claretWhite20: 'ebcfd8',
 	crimson: 'cc0000',
 	jade: '00994d',
 	lemon: 'ffec1a',
 	oxford: '0f5499',
-	oxfordWhite50: '87aacc',
+	oxfordWhite80: '3f76ad',
+	oxfordWhite60: '6f98c2',
+	oxfordWhite40: '9fbbd6',
+	oxfordWhite20: 'cfddeb',
 	mandarinWhite40: 'ffcfad',
 	mandarinWhite60: 'ffb885',
 	sky: 'cce6ff',
 	slate: '262a33',
 	teal: '0d7680',
 	velvet: '593380',
-	velvetPaper50: 'ac92b3',
+	velvetWhite70: '8b70a6',
+	velvetWhite50: 'ac99c0',
+	velvetWhite30: 'cdc2d9',
 	wasabi: '96cc28'
 };
-
-// Types of Origami project
-const origamiTypes = [
-	'cli',
-	'component', // Yes, I know it's not a type... yet
-	'config',
-	'example',
-	'imageset',
-	'library',
-	'meta',
-	'module',
-	'service',
-	'website'
-];
 
 // Create and export the labels
 module.exports = [
 
-	// Base labels
-	{
-		name: 'blocked',
-		description: `Work blocked by something else`,
-		color: colors.crimson,
-		aliases: [
-			'status: blocked'
-		]
-	},
-	{
-		name: 'breaking',
-		description: `Will require a major version bump`,
-		color: colors.claret,
-		aliases: [
-			'breaking-change',
-			'type: breaking'
-		]
-	},
-	{
-		name: 'bug',
-		description: `Something isn't working`,
-		color: colors.crimson,
-		aliases: [
-			'type: bug'
-		]
-	},
-	{
-		name: 'dependencies',
-		description: `This is maintenance work relating to dependency bumps`,
-		color: colors.lemon,
-		aliases: []
-	},
-	{
-		name: 'discussion',
-		description: `General discussion including support questions`,
-		color: colors.candy,
-		aliases: [
-			'type: discussion'
-		]
-	},
-	{
-		name: 'documentation',
-		description: `Improvements or additions to documentation`,
-		color: colors.sky,
-		aliases: [
-			'type: documentation'
-		]
-	},
-	{
-		name: 'duplicate',
-		description: `This issue or pull request already exists`,
-		color: colors.black20,
-		aliases: [
-			'status: duplicate'
-		]
-	},
-	{
-		name: 'feature',
-		description: `New feature request`,
-		color: colors.jade,
-		aliases: [
-			'enhancement',
-			'type: enhancement'
-		]
-	},
-	{
-		name: 'good starter issue',
-		description: `Good for newcomers`,
-		color: colors.teal,
-		aliases: [
-			'beginner-friendly',
-			'beginner',
-			'good-starter-issue',
-			'starter-issue',
-			'status: good starter issue'
-		]
-	},
-	{
-		name: 'help wanted',
-		description: `We'd appreciate some help with this`,
-		color: colors.wasabi,
-		aliases: [
-			'status: help wanted'
-		]
-	},
-	{
-		name: `current`,
-		description: `Used to mark an issue as planned for Origami's current six-week cycle`,
-		color: colors.mandarinWhite60,
-		aliases: []
-	},
-	{
-		name: `pending`,
-		description: `Used to mark an issue to discuss in Origami's next six-week planning session`,
-		color: colors.mandarinWhite40,
-		aliases: []
-	},
-	{
-		name: 'maintenance',
-		description: `Technical tasks that might make things better`,
-		color: colors.lemon,
-		aliases: [
-			'refactor',
-			'testing',
-			'test',
-			'type: maintenance'
-		]
-	},
-	{
-		name: 'okr',
-		description: `This issue or pull request helps us meet an OKR`,
-		color: colors.oxford,
-		aliases: []
-	},
-	{
-		name: 'proposal',
-		description: `A proposed change which requires approval or discussion`,
-		color: colors.slate,
-		aliases: []
-	},
-	{
-		name: 'pattern',
-		description: `A new pattern which impacts multiple components.`,
-		color: colors.velvetPaper50,
-		aliases: []
-	},
-	{
-		name: 'security',
-		description: `This includes a security patch`,
-		color: colors.crimson,
-		aliases: []
-	},
-	{
-		name: 'wontfix',
-		description: `This will not be worked on`,
-		color: colors.black20,
-		aliases: [
-			'status: wontfix',
-			'wont-fix'
-		]
-	},
-	{
-		name: 'percy',
-		description: `This will tell the percy github action to run`,
-		color: colors.oxfordWhite50,
-		aliases: []
-	},
+{
+	name: "¢",
+	description: "Very low value: more tidying/doing something cool than delivering an outcome",
+	color: colors.velvetWhite30,
+	aliases: []
+},
+{
+	name: "$",
+	description: "Low value: would improve something there is not a great need for",
+	color: colors.velvetWhite50,
+	aliases: []
+},
+{
+	name: "$$",
+	description: "Medium value: would definitely solve some problems for us or our users",
+	color: colors.velvetWhite70,
+	aliases: []
+},
+{
+	name: "$$$",
+	description: "High value: would improve outcomes massively, or for lots of users",
+	color: colors.velvet,
+	aliases: []
+},
+{
+	name: "S - hours",
+	description: "Small effort - less than a day",
+	color: colors.claretWhite20,
+	aliases: ['good first issue']
+},
+{
+	name: "M - days",
+	description: "Medium effort - a day or two... or three",
+	color: colors.claretWhite40,
+	aliases: []
+},
+{
+	name: "L - weeks",
+	description: "Large effort - a week or two",
+	color: colors.claretWhite60,
+	aliases: ['L- weeks']
+},
+{
+	name: "XL - month or two",
+	description: "Extra large effort - starting to count in months",
+	color: colors.claretWhite80,
+	aliases: []
+},
+{
+	name: "XXL - many months",
+	description: "Extra extra large effort - this is a behemoth",
+	color: colors.claret,
+	aliases: ['XXl - many months']
+},
+{
+	name: "ENABLER",
+	description: "Likely to unlock lots of possibilities",
+	color: colors.wasabi,
+	aliases: [
+	"!enabler!"
+	]
+},
+{
+	name: "RISK",
+	description: "Something that could go badly wrong if left as it is",
+	color: colors.mandarin,
+	aliases: ['risk']
+},
+{
+	name: "SECURITY",
+	description: "Has security implications",
+	color: colors.mandarin,
+	aliases: ['security']
+},
+{
+	name: "BLOCKED",
+	description: "Cannot be implmented before something else is",
+	color: colors.slate,
+	aliases: ['blocked']
+},
 
-	// Add in Origami type labels
-	...origamiTypes.map(origamiType => {
-		return {
-			name: origamiType,
-			description: `Relates to an Origami ${origamiType}`,
-			color: colors.velvet,
-			aliases: []
-		}
-	}),
+{
+	name: "UX",
+	description: "Will make the project easier to use",
+	color: colors.oxford,
+	aliases: ["ux"]
+},
+{
+	name: "documentation",
+	description: "Improvements to the project's documentation",
+	color: colors.oxfordWhite80,
+	aliases: []
+},
+{
+	name: "feature",
+	description: "Addition of new functionality ",
+	color: colors.oxfordWhite40,
+	aliases: ["enhancement"]
+},
+{
+	name: "tests",
+	description: "Improvement of the project's testedness",
+	color: colors.oxfordWhite60,
+	aliases: []
+},
+{
+	name: "tech debt",
+	description: "Improvement to non-functional aspects of the project",
+	color: colors.oxfordWhite80,
+	aliases: []
+},
+{
+	name: "bug",
+	description: "Something that is broken",
+	color: colors.crimson,
+	aliases: []
+},
+{
+	name: "TGG",
+	description: "Would benefit from a TGG proposal",
+	color: colors.candy,
+	aliases: []
+},
 
-	// Add in continuous delivery labels
-	{
-		name: 'release:major',
-		description: `Add to a PR to trigger a MAJOR version bump when merged`,
-		color: colors.claret,
-		aliases: []
-	},
-	{
-		name: 'release:minor',
-		description: `Add to a PR to trigger a MINOR version bump when merged`,
-		color: colors.jade,
-		aliases: []
-	},
-	{
-		name: 'release:patch',
-		description: `Add to a PR to trigger a PATCH version bump when merged`,
-		color: colors.sky,
-		aliases: []
-	}
 
 ];
