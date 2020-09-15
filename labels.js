@@ -141,7 +141,7 @@ module.exports = [
 	name: "tech debt",
 	description: "Improvement to non-functional aspects of the project",
 	color: colors.oxfordWhite80,
-	aliases: []
+	aliases: ['tech hygiene']
 },
 {
 	name: "bug",
