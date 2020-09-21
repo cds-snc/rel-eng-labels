@@ -32,6 +32,7 @@ const colors = {
 // Create and export the labels
 module.exports = [
 
+//Values
 {
 	name: "¢",
 	description: "Very low value: more tidying/doing something cool than delivering an outcome",
@@ -56,6 +57,8 @@ module.exports = [
 	color: colors.velvet,
 	aliases: []
 },
+
+// Effort
 {
 	name: "S - hours",
 	description: "Small effort - less than a day",
@@ -86,6 +89,28 @@ module.exports = [
 	color: colors.claret,
 	aliases: ['🕑 XXL - many months']
 },
+
+// Goals
+{name: 'Ops docs',
+description: 'Reduce reliance on specialist knowledge to recover from outages',
+color: colors.black20,
+aliases: []},
+{name: 'Monitoring',
+description: 'Be able to rapidly identify, understand the impact of and debug critical failures',
+color: colors.black20,
+aliases: []},
+{name: 'DevX',
+description: 'Improve the efficiency with which engineers can deliver reliable products',
+color: colors.black20,
+aliases: []},
+{name: 'Risks',
+description: 'Make it easier to identify and mitigate technical risk across the FT estate',
+color: colors.black20,
+aliases: []},
+{name: 'Guardrails',
+description: "Define & embed guidance as to what’s expected of technical systems at the FT",
+color: colors.black20,
+aliases: []},
 {
 	name: "ENABLER",
 	description: "Likely to unlock lots of possibilities",
