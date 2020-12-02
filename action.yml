@@ -1,4 +1,4 @@
-name: origami-labels
+name: covid-alert-server-labels
 description: Sync a repo's issue labels with the standard Origami set
 inputs:
   github-token:
