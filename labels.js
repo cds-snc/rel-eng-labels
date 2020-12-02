@@ -31,130 +31,166 @@ const colors = {
 
 // Create and export the labels
 module.exports = [
-
-{
-	name: "¢",
-	description: "Very low value: more tidying/doing something cool than delivering an outcome",
-	color: colors.velvetWhite30,
-	aliases: []
-},
-{
-	name: "$",
-	description: "Low value: would improve something there is not a great need for",
-	color: colors.velvetWhite50,
-	aliases: []
-},
-{
-	name: "$$",
-	description: "Medium value: would definitely solve some problems for us or our users",
-	color: colors.velvetWhite70,
-	aliases: []
-},
-{
-	name: "$$$",
-	description: "High value: would improve outcomes massively, or for lots of users",
-	color: colors.velvet,
-	aliases: []
-},
-{
-	name: "S - hours",
-	description: "Small effort - less than a day",
-	color: colors.claretWhite20,
-	aliases: ['good first issue']
-},
-{
-	name: "M - days",
-	description: "Medium effort - a day or two... or three",
-	color: colors.claretWhite40,
-	aliases: []
-},
-{
-	name: "L - weeks",
-	description: "Large effort - a week or two",
-	color: colors.claretWhite60,
-	aliases: ['L- weeks']
-},
-{
-	name: "XL - month or two",
-	description: "Extra large effort - starting to count in months",
-	color: colors.claretWhite80,
-	aliases: []
-},
-{
-	name: "XXL - many months",
-	description: "Extra extra large effort - this is a behemoth",
-	color: colors.claret,
-	aliases: ['XXl - many months']
-},
-{
-	name: "ENABLER",
-	description: "Likely to unlock lots of possibilities",
-	color: colors.wasabi,
-	aliases: [
-	"!enabler!"
-	]
-},
-{
-	name: "RISK",
-	description: "Something that could go badly wrong if left as it is",
-	color: colors.mandarin,
-	aliases: ['risk']
-},
-{
-	name: "SECURITY",
-	description: "Has security implications",
-	color: colors.mandarin,
-	aliases: ['security']
-},
-{
-	name: "BLOCKED",
-	description: "Cannot be implmented before something else is",
-	color: colors.slate,
-	aliases: ['blocked']
-},
-
-{
-	name: "UX",
-	description: "Will make the project easier to use",
-	color: colors.oxford,
-	aliases: ["ux"]
-},
-{
-	name: "documentation",
-	description: "Improvements to the project's documentation",
-	color: colors.oxfordWhite80,
-	aliases: []
-},
-{
-	name: "feature",
-	description: "Addition of new functionality ",
-	color: colors.oxfordWhite40,
-	aliases: ["enhancement"]
-},
-{
-	name: "tests",
-	description: "Improvement of the project's testedness",
-	color: colors.oxfordWhite60,
-	aliases: []
-},
-{
-	name: "tech debt",
-	description: "Improvement to non-functional aspects of the project",
-	color: colors.oxfordWhite80,
-	aliases: []
-},
-{
-	name: "bug",
-	description: "Something that is broken",
-	color: colors.crimson,
-	aliases: []
-},
-{
-	name: "TGG",
-	description: "Would benefit from a TGG proposal",
-	color: colors.candy,
-	aliases: []
-},
-
-
+  {
+    "description": "Something isn't working",
+    "color": "d73a4a",
+    "name": "bug",
+    "alias": []
+  },
+  {
+    "description": "Improvements or additions to documentation",
+    "color": "0075ca",
+    "name": "documentation",
+    "alias": []
+  },
+  {
+    "description": "This issue or pull request already exists",
+    "color": "cfd3d7",
+    "name": "duplicate",
+    "alias": []
+  },
+  {
+    "description": "New feature or request",
+    "color": "a2eeef",
+    "name": "enhancement",
+    "alias": []
+  },
+  {
+    "description": "Good for newcomers",
+    "color": "7057ff",
+    "name": "good first issue",
+    "alias": []
+  },
+  {
+    "description": "Extra attention is needed",
+    "color": "008672",
+    "name": "help wanted",
+    "alias": []
+  },
+  {
+    "description": "This doesn't seem right",
+    "color": "e4e669",
+    "name": "invalid",
+    "alias": []
+  },
+  {
+    "description": "Further information is requested",
+    "color": "d876e3",
+    "name": "question",
+    "alias": []
+  },
+  {
+    "description": "This will not be worked on",
+    "color": "ffffff",
+    "name": "wontfix",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "aa2049",
+    "name": "security",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "2cc92e",
+    "name": "infrastructure",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "e4f99d",
+    "name": "network",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "ccf429",
+    "name": "launch blocker",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "d89eed",
+    "name": "privacy",
+    "alias": []
+  },
+  {
+    "description": "Canadian Centre for Cyber Security",
+    "color": "ffccf3",
+    "name": "CCCS",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "e5b712",
+    "name": "low priority",
+    "alias": []
+  },
+  {
+    "description": "Blackberry",
+    "color": "aae1ff",
+    "name": "BBRY",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "e99695",
+    "name": "medium priority",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "4a32c1",
+    "name": "high priority",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "c2e0c6",
+    "name": "on hold",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "636e72",
+    "name": "S",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "636e72",
+    "name": "M",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "636e72",
+    "name": "L",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "636e72",
+    "name": "XL",
+    "alias": []
+  },
+  {
+    "description": "",
+    "color": "064760",
+    "name": "needs story definition",
+    "alias": []
+  },
+  {
+    "description": "Improvements to pipelines",
+    "color": "19b3c1",
+    "name": "pipeline",
+    "alias": []
+  },
+  {
+    "description": "testing CI",
+    "color": "19b3c1",
+    "name": "test-label-works",
+    "alias": []
+  }
 ];
