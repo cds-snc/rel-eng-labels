@@ -4,6 +4,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Sync repository labels
     steps:
-      - uses: cds-snc/covid-alert-labels
+      - uses: cds-snc/covid-alert-server-labels@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
