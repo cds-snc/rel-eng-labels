@@ -186,11 +186,5 @@ module.exports = [
     "color": "19b3c1",
     "name": "pipeline",
     "alias": []
-  },
-  {
-    "description": "testing CI",
-    "color": "19b3c1",
-    "name": "test-label-works",
-    "alias": []
   }
 ];
