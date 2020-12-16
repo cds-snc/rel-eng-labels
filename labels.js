@@ -32,6 +32,12 @@ const colors = {
 // Create and export the labels
 module.exports = [
   {
+    "description": "Work that was not in the backlog.",
+    "color": colors.candy,
+    "name": "unplanned work",
+    "alias": []
+  },
+  {
     "description": "Something isn't working",
     "color": "d73a4a",
     "name": "bug",
