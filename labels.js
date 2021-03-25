@@ -192,5 +192,11 @@ module.exports = [
     "color": "19b3c1",
     "name": "pipeline",
     "alias": []
+  }, {
+    "description": "Work for EN Server Succession",
+    "color": colors.jade,
+    "name": "succession",
+    "alias": []
+
   }
 ];
